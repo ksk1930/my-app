@@ -1,0 +1,12 @@
+<h1> G-Pay </h1>
+
+<label> Amout: </label>
+<input type="number" [(ngModel)]="amount">
+<br><br>
+
+<button (click)="withdraw()" class="btn btn-danger"> Withdraw </button>
+<button (click)="deposit()" class="btn btn-success"> Deposit </button>
+
+<br><br>
+
+<button (click)="balance()"> Show Balance </button>

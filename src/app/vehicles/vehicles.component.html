@@ -1,0 +1,26 @@
+<input type="text" placeholder="search" [(ngModel)]="term">
+
+<button (click)="filter()"> filter </button>
+<br><br>
+
+<table>
+    <thead>
+
+    </thead>
+
+    <tbody>
+
+        <tr *ngFor="let vehicle of details" >
+            <td> {{ vehicle.Vehicle}} </td>
+            <td> {{ vehicle.manufacturer }} </td>
+            <td> {{ vehicle.model }} </td>
+            <td> {{ vehicle.type }} </td>
+            <td> {{ vehicle.fuel }} </td>
+            <td> {{ vehicle.color }} </td>
+            <td> {{ vehicle.image }} </td>
+            <td> {{ vehicle.id }} </td>
+        </tr>
+
+    </tbody>
+
+</table>
